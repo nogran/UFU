@@ -11,11 +11,12 @@ S = 1*1 + 2*2 + 3*3 + 4*4 + ... + n*n
 */
 
 #include <stdio.h>
+#include <math.h>
 
 int soma(int n) {
     int i, soma = 0;
     for (i = 1; i <= n; i++) {
-        soma += i * i;
+        soma += pow(i,i);
     }
     return soma;
 }
